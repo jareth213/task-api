@@ -88,3 +88,6 @@ components:
             $ref: '#/components/schemas/ValidationError'
 service:
   - url: http://localhost:3000
+    description: Local development servers
+  - url: https://task-api-9pxb.onrender.com
+    description: Production server on Render
