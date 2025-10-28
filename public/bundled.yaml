@@ -2,6 +2,11 @@ openapi: 3.1.0
 info:
   title: Task API
   version: 1.0.0
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+  - url: http://task-api-9pxb.onrender.com
+    description: Production server on Render
 tags:
   - name: Tasks
     description: Task related endpoints
@@ -86,8 +91,3 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ValidationError'
-service:
-  - url: http://localhost:3000
-    description: Local development servers
-  - url: https://task-api-9pxb.onrender.com
-    description: Production server on Render
